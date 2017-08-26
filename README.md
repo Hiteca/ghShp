@@ -13,7 +13,7 @@ Please refer to http://hiteca.ru/ghshp for more information
 
 ## Installation
 
-### 1. GhPython
+### Install GhPython
 Download last version from food4rhino http://www.food4rhino.com/app/ghpython. 
 Tested with 0.6.0.3.
 
@@ -25,7 +25,7 @@ To install:
 
 3. Restart Rhino and Grasshopper
 
-### 2. Install pyshp
+### Install pyshp
 
 Plugin developed for using in native python environment while Grasshopper is using IronPython. So installation of the module requires a bit of creativity.
 
@@ -35,7 +35,7 @@ Plugin developed for using in native python environment while Grasshopper is usi
 
 Then copy user object files, add to layout and check that it works.
 
-### 3. Install UserObjects
+### Install UserObjects
 
 Download zip archive https://github.com/Hiteca/ghShp/archive/master.zip and copy two UserObject files to special gh directory C:\\Users\\%USERNAME%\\AppData\\Roaming\\Grasshopper\\UserObjects
 
