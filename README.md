@@ -1,4 +1,6 @@
-# gh Shapefile
+# Shapefile Import and Export for Grasshopper
+
+![ghShp](https://github.com/Hiteca/ghShp/blob/master/shapefile128.png?raw=true)
 
 ## Description
 
