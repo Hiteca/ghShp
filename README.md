@@ -6,8 +6,6 @@
 
 Grasshopper plugin to import and export ESRI Shapefile. Plugin written in pyhton and using pyshp module. So GhPython and pyshp are needed to be installed.
 
-Please refer to http://hiteca.ru/ghshp for more information
-
 ## Dependencies
 
 - GhPython http://www.food4rhino.com/app/ghpython
