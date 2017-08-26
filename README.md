@@ -39,9 +39,11 @@ Then copy user object files, add to layout and check that it works.
 
 ### Install UserObjects
 
-Download zip archive https://github.com/Hiteca/ghShp/archive/master.zip and copy two UserObject files to special gh directory C:\\Users\\%USERNAME%\\AppData\\Roaming\\Grasshopper\\UserObjects
+1. Download zip archive https://github.com/Hiteca/ghShp/archive/master.zip
 
-After restart buttons will appears at "Extra" tab
+2. In Grasshopper, choose File > Special Folders > User Objects folder. Save two .userobject files from zip into this folder.
+
+3. New buttons will appears at "Extra" tab
 
 ## Contributing
 
