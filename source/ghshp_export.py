@@ -1,4 +1,24 @@
-Category = "Extra"
+# -*- coding: utf-8 -*-
+
+# Source code available at https://github.com/hiteca
+
+"""
+Export geometry and data to ESRI Shapefile.
+
+    Args:
+        path: Path to exported .shp file
+        shape_type: pyShp shape type (1 - point, 3 - polyline, 5 - polygon...). See full list at https://github.com/GeospatialPython/pyshp
+        geometry: Geometry to export
+        fields: List of fields (format - "name|type|length")
+        records: Data rows. Each row in own branch
+        enc: File encoding. 
+                Default - utf-8 
+        write: [bool] Connect button or toggle to write file
+"""
+ghenv.Component.Name = "Shapefile Export"
+ghenv.Component.NickName = 'Shp Export'
+ghenv.Component.IconDisplayMode = ghenv.Component.IconDisplayMode.icon
+ghenv.Component.Category = "Extra"
 ghenv.Component.SubCategory = "Hiteca"
 try: ghenv.Component.AdditionalHelpFromDocStrings = "2"
 except: pass
@@ -156,9 +176,14 @@ def write_shapefile(file_path, st, geom, fields, data, enc):
     records_dict = {}
     # create fields
     for f in fields:
-        f_name, f_type, f_len = f.split(";")
-        w.field(f_name, f_type, int(f_len))
-    
+        _f = f.split(";")
+        if len(_f) == 3:
+            f_name, f_type, f_len = _f
+            f_len2 = 0
+        else:
+            f_name, f_type, f_len, f_len2 = _f
+        w.field(f_name, f_type, int(f_len), int(f_len2))
+
     # generate geometry
     for geom_branch in geom:
         parts = []
