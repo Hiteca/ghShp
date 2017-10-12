@@ -6,12 +6,16 @@
 
 Grasshopper plugin to import and export ESRI Shapefile. Plugin written in pyhton and using pyshp module. So GhPython and pyshp are needed to be installed.
 
-Please refer to http://hiteca.ru/ghshp for more information
-
 ## Dependencies
 
 - GhPython http://www.food4rhino.com/app/ghpython
 - pyshp https://github.com/GeospatialPython/pyshp
+
+## Changelog
+
+- 2017-10-12 Decimal number support, more examples
+- 2017-08-27 Initial version
+
 
 ## Installation
 
@@ -31,9 +35,9 @@ To install:
 
 Plugin developed for using in native python environment while Grasshopper is using IronPython. So installation of the module requires a bit of creativity.
 
-1. Download pyshp zip achive https://github.com/GeospatialPython/pyshp/archive/master.zip
+1. Download pyshp zip achive https://github.com/GeospatialPython/pyshp/archive/1.2.12.zip
 
-2. Extract it to C:\Users\%USERNAME%\AppData\Roaming\McNeel\Rhinoceros\5.0\scripts\. Final path to shapefile.py should be ...Rhinoceros\5.0\scripts\pyshp-master\shapefile.py
+2. Extract it to C:\Users\%USERNAME%\AppData\Roaming\McNeel\Rhinoceros\5.0\scripts\. Final path to shapefile.py should be ...Rhinoceros\5.0\scripts\shapefile.py
 
 Then copy user object files, add to layout and check that it works.
 
