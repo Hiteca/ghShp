@@ -37,7 +37,7 @@ Plugin developed for using in native python environment while Grasshopper is usi
 
 1. Download pyshp zip achive https://github.com/GeospatialPython/pyshp/archive/1.2.12.zip
 
-2. Extract it to C:\Users\%USERNAME%\AppData\Roaming\McNeel\Rhinoceros\5.0\scripts\. Final path to shapefile.py should be ...Rhinoceros\5.0\scripts\shapefile.py
+2. Extract it to C:\Users\\%USERNAME%\AppData\Roaming\McNeel\Rhinoceros\5.0\scripts\. Final path to shapefile.py should be ...Rhinoceros\5.0\scripts\shapefile.py
 
 Then copy user object files, add to layout and check that it works.
 
